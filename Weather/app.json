@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Weather",
-    "description": "This project is really great.",
+    "description": "This projects gets Lagos weather forecast.",
     "slug": "Weather",
     "privacy": "public",
     "sdkVersion": "31.0.0",
