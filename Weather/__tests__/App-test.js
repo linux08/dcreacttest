@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../App';
-import Spinner from '../src/components/Spinner';
+import Spinner from '../components/Spinner';
 import renderer from 'react-test-renderer';
 import NavigationTestUtils from 'react-navigation/NavigationTestUtils';
 
@@ -47,13 +47,9 @@ jest.mock("NativeModules", () => ({
 
 describe('App snapshot', () => {
   jest.useFakeTimers();
+  jest.setTimeout(30000);
   it('renders the Main screen', async () => {
     const tree = renderer.create(<App />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
-
-  it('renders the Spinner', async () => {
-    const tree = renderer.create(<Spinner />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
-import Spinner from '../src/components/Spinner';
+import Spinner from '../components/Spinner';
 
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -25,8 +25,9 @@ function setup() {
 
 describe('Spinner snapshot', () => {
     jest.useFakeTimers();
+    jest.setTimeout(30000);
 
-    it('should render self and subcomponents', () => {
+    it('should render self and subcomponents', async () => {
         const { enzymeWrapper } = setup()
         expect(enzymeWrapper.prop("style")).toEqual({
             flex: 1,

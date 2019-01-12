@@ -2,15 +2,16 @@ import configureStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import fetchMock from 'fetch-mock';
 import expect from 'expect';
-import * as actions from '../src/actions/weather';
-import * as API from '../src/utils/api';
-import * as types from '../src/actions/actionTypes';
+import * as actions from '../actions/weather';
+import * as API from '../utils/api';
+import * as types from '../actions/actionTypes';
 
 
 const middlewares = [thunk]
 const mockStore = configureStore(middlewares)
 
 describe('actions', async () => {
+    jest.setTimeout(30000);
     afterEach(() => {
         fetchMock.restore()
     });
