@@ -6,4 +6,4 @@ cache:
     - "node_modules"
     - ~/.npm
     - .jest
-script: cd Weather
+before_install: cd Weather
