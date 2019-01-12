@@ -1,6 +1,6 @@
 import React from 'react';
 import App from '../App';
-import Spinner from '../components/Spinner';
+import Spinner from '../src/components/Spinner';
 import renderer from 'react-test-renderer';
 import NavigationTestUtils from 'react-navigation/NavigationTestUtils';
 

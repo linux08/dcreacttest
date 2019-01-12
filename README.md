@@ -1,4 +1,3 @@
-
 ## Steps to Run
 
 ### 1. Clone project and install the dependencies

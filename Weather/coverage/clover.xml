@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1547276799392" clover="3.2.0">
-  <project timestamp="1547276799393" name="All files">
+<coverage generated="1547282150341" clover="3.2.0">
+  <project timestamp="1547282150341" name="All files">
     <metrics statements="97" coveredstatements="46" conditionals="51" coveredconditionals="8" methods="38" coveredmethods="12" elements="186" coveredelements="66" complexity="0" loc="97" ncloc="97" packages="9" files="13" classes="13">
       <package name="Weather">
         <metrics statements="11" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="4"/>
@@ -45,7 +45,7 @@
           <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="5" count="2" type="stmt"/>
           <line num="13" count="2" type="stmt"/>
-          <line num="14" count="3" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
           <line num="19" count="2" type="stmt"/>
           <line num="24" count="2" type="stmt"/>
         </file>

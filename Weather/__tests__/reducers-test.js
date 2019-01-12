@@ -1,6 +1,6 @@
-import reducer from '../reducers/weather';
-import * as types from '../actions/actionTypes';
-import * as API from '../utils/api';
+import reducer from '../src/reducers/weather';
+import * as types from '../src/actions/actionTypes';
+import * as API from '../src/utils/api';
 
 describe('weather reducer', async () => {
     jest.setTimeout(30000);
